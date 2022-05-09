@@ -1,5 +1,6 @@
 import * as React from "react"
 import * as classes from "./common.module.scss"
+import "modern-css-reset"
 
 const IndexPage = () => (
   <>
