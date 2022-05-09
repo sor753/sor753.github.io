@@ -3,15 +3,14 @@ import * as cls from "./common.module.scss"
 import "modern-css-reset"
 
 const IndexPage = () => (
-  <>
+  <div className={cls.container}>
     <header className={cls.header}>
-      <div className={cls.container}>
-        <div className={cls.site}>
+      <div className={cls.headerInner}>
+        <div className={cls.headerLogo}>
           <a href="base-index.html">
             <svg 
               xmlns="http://www.w3.org/2000/svg"
-              width="226.2"
-              height="29"
+              x="0px" y="0px" viewBox="0 0 226.2 28.8"
             >
               <defs></defs>
               <desc>SK PORTFOLIO</desc>
@@ -42,12 +41,11 @@ const IndexPage = () => (
       </div>
     </header>
     <section className={cls.hero}>
-      <div class="heroContainer">
-        <figure>
+      <div className={cls.heroContainer}>
+        <figure className={cls.heroImg}>
           <svg 
             xmlns="http://www.w3.org/2000/svg"
-            width="657.5"
-            height="1013.6"
+            x="0px" y="0px" viewBox="0 0 657.5 1013.6"
           >
           <g>
           <path className={cls.st0} d="M291.1,406.1c2.4,8.7-3.9,50.7-6.3,68.1s-5.4,60.5-5.8,68.6c-0.8,17.9,3.2,25.8,10.1,31.4
@@ -120,12 +118,12 @@ const IndexPage = () => (
           </svg> 
         </figure>
       </div>
-      <div class="heroContainer">
+      <div className={cls.heroContainer}>
+        <p className={cls.heroTtl}>S.KAWAZOE's</p>
        <figure className={cls.heroChar}>
           <svg 
             xmlns="http://www.w3.org/2000/svg"
-            width="356.7"
-            height="150.8"
+            x="0px" y="0px" viewBox="0 0 356.7 150.8"
           >
             <defs></defs>
             <desc>portfolio</desc>
@@ -143,9 +141,12 @@ const IndexPage = () => (
        </figure>
       </div>
     </section>
-    <section className={cls.food}>
+    <section className={cls.career}>
       <div className={cls.container}>
-        <h2 className={cls.bar}>Food <span>Essence</span></h2>
+        <h2 className={cls.level2Heading}>
+          <span className={cls.level2Heading__inner}>CAREER</span><br />
+          <span className={cls.level2Heading__innerSub}>経歴</span>
+        </h2>
         <div className={cls.details}>
           <div className={cls.detail}>
             <figure>
@@ -211,7 +212,7 @@ const IndexPage = () => (
         </ul>
       </div>
     </footer>
-  </>
+  </div>
 )
 
 export default IndexPage
