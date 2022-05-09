@@ -10,25 +10,25 @@ const IndexPage = () => (
           <a href="base-index.html">
             <svg 
               xmlns="http://www.w3.org/2000/svg"
-              x="0px" y="0px" viewBox="0 0 226.2 28.8"
+              x="0px" y="0px" viewBox="0 0 269.5 24.2"
             >
               <defs></defs>
               <desc>SK PORTFOLIO</desc>
-              <path fill="#471311"
-                d="M0,19.6h5c0.3,3.3,2.1,4.6,5.6,4.6c2.6,0,4.9-1,4.9-3.6c0-2.7-2.4-3.2-6.2-4.2C4.8,15.3,0.7,14,0.7,8.2
-                c0-5.4,4-8.3,9.6-8.3C16,0,19.6,3.1,20,8.6h-4.9c-0.3-2.8-2.2-4.2-4.8-4.2c-2.7,0-4.5,1.3-4.5,3.2c0,2.2,1.8,2.9,5.5,3.8
-                c5.2,1.2,9.4,2.6,9.4,8.5c0,5.6-4.1,8.7-9.8,8.7C4,28.8,0.2,25.4,0,19.6z M21,0.5h5.1v11l9.6-11H42l-9.8,11l10.5,16.6h-6l-8.1-12.9
-                L26,18.1v10h-5V0.5z M51.8,0.5h11c2.9,0,5.1,0.9,6.6,2.6c1.4,1.6,2.2,3.7,2.2,6.3c0,5.2-3.1,8.7-8.4,8.7H57v10h-5.3L51.8,0.5
-                L51.8,0.5z M57.1,13.6h5.3c2.7,0,4.1-1.6,4.1-4.1c0-2.6-1.5-4.1-4-4.1h-5.3v8.2H57.1z M71.8,14.4C71.8,6.1,76.5,0,83.9,0
-                S96,6.1,96,14.4s-4.7,14.4-12.1,14.4S71.8,22.7,71.8,14.4z M90.8,14.4c0-5.5-2.2-9.8-6.8-9.8s-7,4.3-7,9.8s2.3,9.8,6.9,9.8
-                S90.8,19.9,90.8,14.4z M97,0.5h11.5c4.8,0,8.1,3.1,8.1,7.7c0,3.2-1.4,5.7-4.6,6.7V15c2.3,0.7,3.5,2.2,3.8,5.6
-                c0.4,3.9,0.2,6.9,1.1,7.3v0.3H112c-0.6-0.3-0.7-3.4-0.9-6.4s-1.8-4.7-4.9-4.7h-4.1v11.1H97V0.5z M102.1,12.7h5.4
-                c2.8,0,4.1-1.6,4.1-3.8s-1.3-3.9-4-3.9h-5.5C102.1,5,102.1,12.7,102.1,12.7z M116.6,0.5h20.2v4.7h-7.5v22.9h-5.1V5.3h-7.5V0.5H116.6
-                z M137.5,0.5h18v4.7h-12.9v6.6h10.9v4.8h-10.9V28h-5.1V0.5z M154,14.4C154,6.1,158.7,0,166.1,0s12.1,6.1,12.1,14.4
-                s-4.7,14.4-12.1,14.4S154,22.7,154,14.4z M172.9,14.4c0-5.5-2.2-9.8-6.8-9.8s-6.9,4.3-6.9,9.8s2.3,9.8,6.9,9.8
-                S172.9,19.9,172.9,14.4z M178.7,0.5h5.1v22.9h11.8v4.7h-16.9L178.7,0.5L178.7,0.5z M196.4,0.5h5.1v27.6h-5.1V0.5z M202,14.4
-                C202,6.1,206.7,0,214.1,0s12.1,6.1,12.1,14.4s-4.7,14.4-12.1,14.4S202,22.7,202,14.4z M221,14.4c0-5.5-2.2-9.8-6.8-9.8
-                s-6.9,4.3-6.9,9.8s2.3,9.8,6.9,9.8S221,19.9,221,14.4z"/>
+              <path  fill="#471311"
+                d="M0,16.5h4.6c0.3,2.8,1.9,3.9,5.2,3.9c2.4,0,4.5-0.8,4.5-3c0-2.3-2.2-2.7-5.7-3.5c-4.2-0.9-8-2-8-6.9
+                c0-4.6,3.8-7,8.9-7c5.2,0,8.6,2.6,9,7.2H14c-0.3-2.3-2.1-3.5-4.5-3.5C7,3.8,5.3,4.8,5.3,6.5c0,1.9,1.6,2.4,5.1,3.2
+                c4.8,1,8.7,2.2,8.7,7.2c0,4.7-3.8,7.3-9,7.3C3.7,24.2,0.2,21.4,0,16.5z M25.1,0.5h4.7v9.2l8.9-9.2h5.8l-9.1,9.3l9.7,13.9h-5.5
+                l-7.5-10.8l-2.4,2.4v8.4H25V0.5H25.1z M67.6,0.5h10.2c2.7,0,4.7,0.8,6.1,2.2C85.2,4,86,5.8,86,7.9c0,4.4-2.9,7.3-7.8,7.3h-5.7v8.4
+                h-4.9V0.5z M72.5,11.4h4.9c2.5,0,3.8-1.4,3.8-3.5c0-2.2-1.4-3.4-3.7-3.4h-4.9v6.9H72.5z M90.9,12.1C90.9,5.2,95.2,0,102.1,0
+                s11.2,5.2,11.2,12.1s-4.3,12.1-11.2,12.1S90.9,19.1,90.9,12.1z M108.4,12.1c0-4.6-2.1-8.2-6.3-8.2c-4.3,0-6.4,3.6-6.4,8.2
+                s2.2,8.2,6.4,8.2S108.4,16.7,108.4,12.1z M119,0.5h10.6c4.5,0,7.5,2.6,7.5,6.5c0,2.7-1.3,4.8-4.3,5.6v0.1c2.1,0.6,3.2,1.8,3.5,4.7
+                c0.3,3.3,0.2,5.8,1,6.1v0.2h-4.5c-0.6-0.3-0.6-2.9-0.8-5.4s-1.6-4-4.5-4h-3.8v9.3H119V0.5z M123.7,10.7h5c2.6,0,3.8-1.3,3.8-3.2
+                s-1.2-3.3-3.7-3.3h-5.1C123.7,4.2,123.7,10.7,123.7,10.7z M141.9,0.5h18.7v4h-7v19.2h-4.7V4.4h-7V0.5z M166.1,0.5h16.6v4h-11.9V10
+                h10.1v4h-10.1v9.6h-4.7L166.1,0.5L166.1,0.5z M187,12.1C187,5.2,191.4,0,198.2,0s11.2,5.2,11.2,12.1s-4.3,12.1-11.2,12.1
+                C191.4,24.2,187,19.1,187,12.1z M204.6,12.1c0-4.6-2.1-8.2-6.3-8.2c-4.3,0-6.4,3.6-6.4,8.2s2.2,8.2,6.4,8.2S204.6,16.7,204.6,12.1z
+                 M215.2,0.5h4.7v19.3h10.9v3.9h-15.6L215.2,0.5L215.2,0.5z M236.6,0.5h4.7v23.2h-4.7V0.5z M247.1,12.1c0-6.9,4.3-12.1,11.2-12.1
+                c6.8,0,11.2,5.2,11.2,12.1s-4.3,12.1-11.2,12.1C251.5,24.2,247.1,19.1,247.1,12.1z M264.7,12.1c0-4.6-2.1-8.2-6.3-8.2
+                c-4.3,0-6.4,3.6-6.4,8.2s2.2,8.2,6.4,8.2C262.6,20.3,264.7,16.7,264.7,12.1z"/>
             </svg>
           </a>
         </div>
@@ -141,49 +141,63 @@ const IndexPage = () => (
        </figure>
       </div>
     </section>
+    <div className={cls.spaceModule_l}></div>
     <section className={cls.career}>
       <div className={cls.container}>
         <h2 className={cls.level2Heading}>
           <span className={cls.level2Heading__inner}>CAREER</span><br />
           <span className={cls.level2Heading__innerSub}>経歴</span>
         </h2>
-        <div className={cls.details}>
-          <div className={cls.detail}>
-            <figure>
-              <img src="images/fruit.jpg" alt="" />
-            </figure>
-            <h3>フルーツ</h3>
-            <p>FRUIT</p>
-            <p>甘くてすっぱくておいしい果実たち。<br />旬のフルーツを満喫します。</p>
-          </div>
-          <div className={cls.detail}>
-            <figure>
-              <img src="images/grain.jpg" alt="" />
-            </figure>
-            <h3>穀物</h3>
-            <p>GRAIN</p>
-            <p>食事の基本となる穀物。<br />毎日の活動のエネルギー源になります。</p>
-          </div>
-          <div className={cls.detail}>
-            <figure>
-              <img src="images/beverage.jpg" alt="" />
-            </figure>
-            <h3>飲み物</h3>
-            <p>BEVERAGE</p>
-            <p>リラックスするのに欠かせない飲み物。<br />お気に入りの一杯はありますか？</p>
-          </div>
+        <div className={cls.spaceModule_s}></div>
+        <div className={cls.content}>
+          <p>フロントエンドエンジニア。</p>
+          <p>前職でwebマーケティングを担当した際に、これからの時代でのwebの重要性を痛感し、エンジニアへ転職。</p>
+          <p>スクールで学習し、未経験エンジニア集団のLizeへジョイン。3年に渡りwebデザインとフロントエンド業務をてがける。</p>
+          <p>個人事業主や中小企業から大企業案件まで幅広い制作にたずさわる。</p>
+          <p>最近の目標は、バックエンドを学習しアプリケーションを作ること。</p>
         </div>
       </div>
     </section>
-    <section className={cls.photo}>
-      <h2 className={cls.srOnly}>Photo</h2>
-      <figure>
-        <img src="images/berry.jpg" alt="赤く熟したベリー" />
-      </figure>
+    <div className={cls.spaceModule_m}></div>
+    <section className={cls.skill}>
+      <div className={cls.container}>
+        <h2 className={cls.level2Heading}>
+          <span className={cls.level2Heading__inner}>SKILL<br />&<br />TECH</span><br />
+          <span className={cls.level2Heading__innerSub}>技術</span>
+        </h2>
+      </div> 
+      <div className={cls.spaceModule_s}></div>
+      <div className={cls.content,cls.tCenter}>
+        <p>HTML5</p>
+        <p>CSS3</p>
+        <p>JavaScript</p>
+        <p>Vue.js</p>
+        <p>Nuxt.js</p>
+        <p>React.js</p>
+        <p>Gatsby.js</p>
+        <p>Canvas</p>
+        <p>CreateJS</p>
+        <p>Ruby</p>
+        <p>Ruby on Rails</p>
+        <p>MySQL</p>
+        <p>Docker</p>
+        <p>git</p>
+        <p>github</p>
+        <p>Netlify</p>
+        <p>Heroku</p>
+        <p>AWS</p>
+        <p>microCMS</p>
+        <p>Contentful</p>
+        <p>Adobe Photoshop</p>
+        <p>Adobe Illustrator</p>
+        <p>Adobe XD</p>
+        <p>Figma</p>
+        <p>紙とペン</p>
+      </div>
     </section>
+    <div className={cls.spaceModule_m}></div>
     <footer className={cls.footer}>
-      <
-  div className={cls.container}>
+      <div className={cls.container}>
         <div className={cls.site}>
           <a href="base-index.html">
             <img src="images/logo-w.svg" alt="ESSENTIALS" />
