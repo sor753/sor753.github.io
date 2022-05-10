@@ -143,59 +143,93 @@ const IndexPage = () => (
     </section>
     <div className={cls.spaceModule_l}></div>
     <section className={cls.career}>
-      <div className={cls.container}>
-        <h2 className={cls.level2Heading}>
-          <span className={cls.level2Heading__inner}>CAREER</span><br />
-          <span className={cls.level2Heading__innerSub}>経歴</span>
-        </h2>
-        <div className={cls.spaceModule_s}></div>
-        <div className={cls.content}>
-          <p>フロントエンドエンジニア。</p>
-          <p>前職でwebマーケティングを担当した際に、これからの時代でのwebの重要性を痛感し、エンジニアへ転職。</p>
-          <p>スクールで学習し、未経験エンジニア集団のLizeへジョイン。3年に渡りwebデザインとフロントエンド業務をてがける。</p>
-          <p>個人事業主や中小企業から大企業案件まで幅広い制作にたずさわる。</p>
-          <p>最近の目標は、バックエンドを学習しアプリケーションを作ること。</p>
+      <h2 className={cls.level2Heading}>
+        <span className={cls.level2Heading__inner}>CAREER</span><br />
+        <span className={cls.level2Heading__inner_sub}>経歴</span>
+      </h2>
+      <div className={cls.spaceModule_s}></div>
+      <div className={cls.content}>
+        <p>フロントエンドエンジニア。</p>
+        <p>前職でwebマーケティングを担当した際に、これからの時代でのwebの重要性を痛感し、エンジニアへ転職。</p>
+        <p>スクールで学習し、未経験エンジニア集団のLizeへジョイン。3年に渡りwebデザインとフロントエンド業務をてがける。</p>
+        <p>個人事業主や中小企業から大企業案件まで幅広い制作にたずさわる。</p>
+        <p>最近の目標は、バックエンドを学習しアプリケーションを作ること。</p>
+      </div>
+    </section>
+    <div className={cls.spaceModule_l}></div>
+    <section className={cls.skill}>
+      <h2 className={cls.level2Heading}>
+        <span className={cls.level2Heading__inner}>SKILL<br />&<br />TECH</span><br />
+        <span className={cls.level2Heading__inner_sub}>技術</span>
+      </h2>
+      <div className={cls.spaceModule_m}></div>
+      <h3 className={cls.level3Heading}>
+        <span className={cls.level3Heading__inner}>Main</span>
+      </h3>
+      <div className={cls.spaceModule_s}></div>
+      <div className={cls.content}>
+        <div className={cls.tCenter}>
+          <p>HTML5/CSS3</p>
+          <p>JavaScript</p>
+          <p>Vue.js/Nuxt.js</p>
+          <p>React.js/Gatsby.js</p>
+          <p>Canvas/CreateJS</p>
+          <p>git/github</p>
+          <p>Netlify</p>
+          <p>microCMS</p>
+          <p>Contentful</p>
+          <p>VSCode</p>
+          <p>Vim</p>
+          <p>Adobe Photoshop/Illustrator/XD</p>
+          <p>Figma</p>
+          <p>紙とペン</p>
+        </div>
+      </div>
+      <div className={cls.spaceModule_m}></div>
+      <h3 className={cls.level3Heading}>
+        <span className={cls.level3Heading__inner}>Sub</span>
+      </h3>
+      <div className={cls.spaceModule_s}></div>
+      <div className={cls.content}>
+        <div className={cls.tCenter}>
+          <p>Ruby</p>
+          <p>Ruby on Rails</p>
+          <p>MySQL</p>
+          <p>php/WordPress</p>
+          <p>Movable Type</p>
+          <p>Docker</p>
+          <p>Heroku</p>
+          <p>AWS</p>
+          <p>Adobe InDesign/Animate</p>
         </div>
       </div>
     </section>
-    <div className={cls.spaceModule_m}></div>
-    <section className={cls.skill}>
-      <div className={cls.container}>
-        <h2 className={cls.level2Heading}>
-          <span className={cls.level2Heading__inner}>SKILL<br />&<br />TECH</span><br />
-          <span className={cls.level2Heading__innerSub}>技術</span>
-        </h2>
-      </div> 
+    <div className={cls.spaceModule_l}></div>
+    <section className={cls.product}>
+      <h2 className={cls.level2Heading}>
+        <span className={cls.level2Heading__inner}>PRODUCT</span><br />
+        <span className={cls.level2Heading__inner_sub}>制作</span>
+      </h2>
       <div className={cls.spaceModule_s}></div>
-      <div className={cls.content,cls.tCenter}>
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>JavaScript</p>
-        <p>Vue.js</p>
-        <p>Nuxt.js</p>
-        <p>React.js</p>
-        <p>Gatsby.js</p>
-        <p>Canvas</p>
-        <p>CreateJS</p>
-        <p>Ruby</p>
-        <p>Ruby on Rails</p>
-        <p>MySQL</p>
-        <p>Docker</p>
-        <p>git</p>
-        <p>github</p>
-        <p>Netlify</p>
-        <p>Heroku</p>
-        <p>AWS</p>
-        <p>microCMS</p>
-        <p>Contentful</p>
-        <p>Adobe Photoshop</p>
-        <p>Adobe Illustrator</p>
-        <p>Adobe XD</p>
-        <p>Figma</p>
-        <p>紙とペン</p>
+      <div className={cls.content}>
+        <a className={`${cls.card} ${cls.card_link}`}>
+          <figure className={cls.card__imgWrap}>
+            <img
+              className={cls.card__img}
+              src="/images/card.jpg"
+              alt="カード" />
+          </figure>
+          <div className={cls.spaceModule_xs}></div>
+          <div className={cls.card__body}>
+            <p className={cls.card__ttl}>Lize</p>
+            <p className={cls.card__text}>
+              text
+            </p>
+          </div>
+          <div className={cls.spaceModule_xs}></div>
+        </a>
       </div>
     </section>
-    <div className={cls.spaceModule_m}></div>
     <footer className={cls.footer}>
       <div className={cls.container}>
         <div className={cls.site}>
