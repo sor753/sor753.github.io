@@ -41,7 +41,8 @@ a {
 .st0{fill:none;stroke:#471311;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .st1{fill:#F4F3ED;}
 .st2{fill:#471311;}
-.st3{fill:none;stroke:#222222;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+.st3{fill:none;stroke:#471311;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+.st4{fill:none;stroke:#F4F3ED;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
 
 /* space module */
 .space-module {
@@ -63,7 +64,7 @@ a {
   &_s {
     position: relative;
     width: 100%;
-    height:100px;
+    height: 50px;
     &::before {
       content: '';
       position: absolute;
@@ -78,7 +79,7 @@ a {
   &_m {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 100px;
     &::before {
       content: '';
       position: absolute;
@@ -91,6 +92,21 @@ a {
     }
   }
   &_l {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0.1px;
+      height: 50px;
+      background: #471311;
+    }
+  }
+  &_xl {
     position: relative;
     width: 100%;
     height: 400px;
@@ -137,6 +153,32 @@ a {
   color: #F4F3ED;
   font-size: 12px;
   border-radius: 3px;
+}
+
+/* button */
+.btn {
+  &__wrap {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+  }
+  display: inline-block;
+  width: 200px;
+  max-width: 100%;
+  padding: 5px 10px;
+  background: #331311;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  color: #F4F3ED;
+  text-align: center;
+  text-decoration: none;
+  transition: .25s;
+  &:focus,
+  &:hover {
+    background: #F4F3ED;
+    border-color: currentColor;
+    color: #471311;
+  }
 }
 
 /* header */
@@ -195,7 +237,8 @@ a {
 	margin-right: 55px;
 }
 
-/* hero */
+/* 
+hero */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -295,5 +338,30 @@ a {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
+  }
+}
+
+/* footer */
+.footer {
+  padding: 0 15px 30px;
+}
+.footer-inner {
+  background: #231311;
+  color: #F4F3ED;
+  padding: 100px 0 50px;
+}
+.footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  &__name {
+    width: 10%;
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  &__char {
+    margin-left: 30px;
+    & svg {
+      transform: rotate(-15deg) translateY(-25px);
+    }
   }
 }
