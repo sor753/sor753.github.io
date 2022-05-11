@@ -28,7 +28,7 @@ a {
 
 .content {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -338,6 +338,42 @@ hero */
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
+  }
+}
+
+/* about */
+.about {
+  &__wrap {
+    width: 100%;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: flex-end;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  }
+}
+.about-img {
+  &__wrap {
+    width: 50%;
+    @media (min-width: 768px) {
+      flex-shrink: 0;
+    }
+  }
+}
+.about-text {
+  &_author {
+    text-align: right;
+  }
+  &__wrap {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 15px 25px;
+    @media (min-width: 768px) {
+      padding: 0 0 0 50px;
+    }
   }
 }
 

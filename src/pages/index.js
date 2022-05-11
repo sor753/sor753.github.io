@@ -275,6 +275,39 @@ const IndexPage = () => (
         <a href="" className={cls.btn}>More</a>
       </div>
     </section>
+    <div className={cls.spaceModule_l}></div>
+    <section className={cls.about}>
+      <div>
+        <div className={cls.about__wrap}>
+          <div className={cls.aboutImg__wrap}>
+            <figure className={cls.aboutImg}>
+              <img className={cls.aboutImg__inner}
+                src="/images/stargazer.jpg"
+                alt="" />
+            </figure>
+          </div>
+          <div className={cls.aboutText__wrap}>
+            <p className={cls.aboutText}>
+              静夜の空に星が一つ消えた<br />
+              虚空の底へ星が一つ流れた<br /><br />
+              われ等の生命　つかのま光り<br />
+              音もなく静夜の底に<br />
+              虚無への道をとる<br /><br />
+              夜天いよいよに澄み渡り<br />
+              静夜いよいよに深い<br />
+              天は永劫のかたちに残ってゐれば<br />
+              いま一つの存在がほろびたのだと<br />
+              一瞬の後　誰が思はう<br /><br />
+              静夜の空に星が一つ消えた<br />
+              虚空の底へ星が一つ流れた<br /><br />
+            </p>
+            <p className={cls.aboutText_author}>
+              －－堀口大学『流星』
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <div className={cls.spaceModule_xl}></div>
     <footer className={cls.footer}>
       <div className={cls.footerInner}>
