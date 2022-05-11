@@ -125,9 +125,23 @@ a {
   }
 }
 
+/* label */
+.label {
+  &__wrap {
+    margin-bottom: -5px;
+  }
+  display: inline-block;
+  padding: 3px 5px;
+  margin: 0 5px 5px 0;
+  background: #471311;
+  color: #F4F3ED;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
 /* header */
 .header {
-  padding: 15px;
+  padding:  30px 15px 50px;
   &-inner {
     border: 0.1px solid #471311;
     position: relative;
@@ -225,8 +239,31 @@ a {
 
 /* card */
 .card {
+  &__wrap {
+    display: flex;
+    max-width: 500px;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -20px;
+    padding: 0 15px;
+    @media (min-width: 768px) {
+      max-width: 1200px;
+      margin-bottom: -30px;
+      & > *:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+  }
+  width: 100%;
   border: 2px solid #471311;
+  margin-bottom: 20px;
   padding: 15px 10px 5px;
+  @media (min-width: 768px) {
+    width: 31.707%;
+    margin-right: 2.43902%;
+    margin-bottom: 30px;
+  }
   &_link {
     display: block;
     transition: .25s;
@@ -253,11 +290,6 @@ a {
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
-  }
-  &__body {
-    & > *:last-child {
-      margin-bottom: 0;
-    }
   }
   &__ttl {
     margin-bottom: 5px;

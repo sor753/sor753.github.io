@@ -153,7 +153,7 @@ const IndexPage = () => (
         <p>前職でwebマーケティングを担当した際に、これからの時代でのwebの重要性を痛感し、エンジニアへ転職。</p>
         <p>スクールで学習し、未経験エンジニア集団のLizeへジョイン。3年に渡りwebデザインとフロントエンド業務をてがける。</p>
         <p>個人事業主や中小企業から大企業案件まで幅広い制作にたずさわる。</p>
-        <p>最近の目標は、バックエンドを学習しアプリケーションを作ること。</p>
+        <p>最近の目標は、Railsを使用してWebアプリケーションを作ることと、WebGLを学習して3Dを利用したインタラクティブなWebサイトを制作すること。</p>
       </div>
     </section>
     <div className={cls.spaceModule_l}></div>
@@ -211,7 +211,29 @@ const IndexPage = () => (
         <span className={cls.level2Heading__inner_sub}>制作</span>
       </h2>
       <div className={cls.spaceModule_s}></div>
-      <div className={cls.content}>
+      <div className={cls.card__wrap}>
+        <a href="https://lize.dev/" target="_blank"  className={`${cls.card} ${cls.card_link}`}>
+          <figure className={cls.card__imgWrap}>
+            <img
+              className={cls.card__img}
+              src="/images/card.jpg"
+              alt="Lize" />
+          </figure>
+          <div className={cls.spaceModule_xs}></div>
+          <div className={cls.card__body}>
+            <p className={cls.card__ttl}>Lize</p>
+            <p className={cls.card__text}>
+              text
+            </p>
+            <div className={cls.label__wrap}>
+              <span className={cls.label}>html/css</span>
+              <span className={cls.label}>JavaScript</span>
+              <span className={cls.label}>Vue/Nuxt.js</span>
+              <span className={cls.label}>Canvas/CreateJS</span>
+            </div>
+          </div>
+          <div className={cls.spaceModule_xs}></div>
+        </a>
         <a className={`${cls.card} ${cls.card_link}`}>
           <figure className={cls.card__imgWrap}>
             <img
@@ -225,6 +247,24 @@ const IndexPage = () => (
             <p className={cls.card__text}>
               text
             </p>
+            <span className={cls.label}>html/css</span>
+          </div>
+          <div className={cls.spaceModule_xs}></div>
+        </a>
+        <a className={`${cls.card} ${cls.card_link}`}>
+          <figure className={cls.card__imgWrap}>
+            <img
+              className={cls.card__img}
+              src="/images/card.jpg"
+              alt="カード" />
+          </figure>
+          <div className={cls.spaceModule_xs}></div>
+          <div className={cls.card__body}>
+            <p className={cls.card__ttl}>Lize</p>
+            <p className={cls.card__text}>
+              text
+            </p>
+            <span className={cls.label}>html/css</span>
           </div>
           <div className={cls.spaceModule_xs}></div>
         </a>
