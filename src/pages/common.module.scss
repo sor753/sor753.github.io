@@ -257,9 +257,7 @@ a {
   }
 }
 .about-text {
-  &_author {
-    text-align: right;
-  }
+  padding-bottom: 25px;
   &__wrap {
     width: 100%;
     max-width: 500px;
@@ -268,5 +266,11 @@ a {
     @media (min-width: 768px) {
       padding: 0 0 0 50px;
     }
+  }
+}
+.about-text-btn {
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
   }
 }

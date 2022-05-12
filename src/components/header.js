@@ -1,4 +1,6 @@
 import * as React from "react"
+import { Link } from "gatsby"
+
 import * as header from "./header.module.scss"
 import * as cls from "../pages/common.module.scss"
 
@@ -6,7 +8,7 @@ const Header = () => (
     <header className={header.header}>
       <div className={header.headerInner}>
         <div className={header.headerLogo}>
-          <a href="base-index.html">
+          <Link to={`/`}>
             <svg 
               xmlns="http://www.w3.org/2000/svg"
               x="0px" y="0px" viewBox="0 0 269.5 24.2"
@@ -29,12 +31,16 @@ const Header = () => (
                 c6.8,0,11.2,5.2,11.2,12.1s-4.3,12.1-11.2,12.1C251.5,24.2,247.1,19.1,247.1,12.1z M264.7,12.1c0-4.6-2.1-8.2-6.3-8.2
                 c-4.3,0-6.4,3.6-6.4,8.2s2.2,8.2,6.4,8.2C262.6,20.3,264.7,16.7,264.7,12.1z"/>
             </svg>
-          </a>
+          </Link>
         </div>
         <nav className={header.nav}>
           <ul>
-            <li><a href="base-index.html">TOP</a></li>
-            <li><a href="base-about.html">ABOUT</a></li>
+            <li>
+              <Link to={`/`}>TOP</Link>
+            </li>
+            <li>
+              <Link to={`/about/`}>ABOUT</Link>
+            </li>
           </ul>
         </nav>
       </div>

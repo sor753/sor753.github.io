@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import * as cls from "./common.module.scss"
 import "modern-css-reset"
 
@@ -144,7 +144,7 @@ const IndexPage = ({ data }) => (
         </a>
       </div>
       <div className={cls.btn__wrap}>
-        <a href="" className={cls.btn}>More</a>
+        <Link to={`/`} className={cls.btn}>More</Link>
       </div>
     </section>
     <SpaceModule size="l" />
@@ -164,22 +164,15 @@ const IndexPage = ({ data }) => (
           </div>
           <div className={cls.aboutText__wrap}>
             <p className={cls.aboutText}>
-              静夜の空に星が一つ消えた<br />
-              虚空の底へ星が一つ流れた<br /><br />
-              われ等の生命　つかのま光り<br />
-              音もなく静夜の底に<br />
-              虚無への道をとる<br /><br />
-              夜天いよいよに澄み渡り<br />
-              静夜いよいよに深い<br />
-              天は永劫のかたちに残ってゐれば<br />
-              いま一つの存在がほろびたのだと<br />
-              一瞬の後　誰が思はう<br /><br />
-              静夜の空に星が一つ消えた<br />
-              虚空の底へ星が一つ流れた<br /><br />
+              福岡県でフロントエンドエンジニアをしています。フロント側の工程なら、ディレクションからデザイン、コーディングまで幅広くやっています。<br />
+              最近は、ワイヤーフレームを紙とペンで描き、illustratorでモックアップ、Figmaでプロトタイプ作成。そしてVueかReactでコーディングという流れが多いです。<br />
+              メインはVue/Nuxt.jsで、たまにReact/Gatsby.jsを使っています。<br />
+              新しいもの好きで、いろいろな技術に手を出している状態なので、そろそろ絞りたいなと思案中です。<br />
+              と言いつつ、WebGLやWASMにも手を出したいこの頃です。
             </p>
-            <p className={cls.aboutText_author}>
-              －－堀口大学『流星』
-            </p>
+            <div className={cls.aboutTextBtn}>
+              <Link to ={`/about/`} className={cls.btn}>More</Link>
+            </div>
           </div>
         </div>
       </div>
