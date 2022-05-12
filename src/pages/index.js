@@ -6,11 +6,13 @@ import * as cls from "./common.module.scss"
 import "modern-css-reset"
 
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 import SpaceModule from "../components/spaceModule"
 
 const IndexPage = ({ data }) => (
   <div className={cls.container}>
     <Layout>
+    <Hero page="index" />
     <SpaceModule size="xl" />
     <section className={cls.career}>
       <h2 className={cls.level2Heading}>
