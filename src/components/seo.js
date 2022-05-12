@@ -25,6 +25,7 @@ const Seo = (props) => {
   const url = props.pagepath
     ? `${data.site.siteMetadata.siteUrl}${props.pagepath}`
     : data.site.siteMetadata.siteUrl
+  const imgurl = `${data.site.siteMetadata.siteUrl}/thumb.png`
 
   return (
   <Helmet>
@@ -43,6 +44,12 @@ const Seo = (props) => {
     <meta property="og:type" content="website" />
     <meta property="og:locale" content={data.site.siteMetadata.locale} />
     <meta property="fb:app_id" content={data.site.siteMetadata.fbappid} />
+
+    <meta property="og:image" content={imgurl} />
+    <meta property="og:image" content="1280" />
+    <meta property="og:image" content="640" />
+
+    <meta name="twitter:card" content="summary_large_image" />
   </Helmet>
 )}
 
