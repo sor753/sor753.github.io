@@ -6,18 +6,17 @@ import * as cls from "./common.module.scss"
 import "modern-css-reset"
 
 import Layout from "../components/layout"
-import SpaceModule from "../components/spaceModule"
 
 const IndexPage = ({ data }) => (
   <div className={cls.container}>
     <Layout>
-    <SpaceModule size="xl" />
+    <div className={cls.spaceModule_xl}></div>
     <section className={cls.career}>
       <h2 className={cls.level2Heading}>
         <span className={cls.level2Heading__inner}>CAREER</span><br />
         <span className={cls.level2Heading__inner_sub}>経歴</span>
       </h2>
-      <SpaceModule size="s" />
+      <div className={cls.spaceModule_s}></div>
       <div className={cls.content}>
         <p>フロントエンドエンジニア。</p>
         <p>前職でwebマーケティングを担当した際に、これからの時代でのwebの重要性を痛感し、エンジニアへ転職。</p>
@@ -26,17 +25,17 @@ const IndexPage = ({ data }) => (
         <p>最近の目標は、Railsを使用してWebアプリケーションを作ることと、WebGLを学習して3Dを利用したインタラクティブなWebサイトを制作すること。</p>
       </div>
     </section>
-    <SpaceModule size="l" />
+    <div className={cls.spaceModule_l}></div>
     <section className={cls.skill}>
       <h2 className={cls.level2Heading}>
         <span className={cls.level2Heading__inner}>SKILL<br />&<br />TECH</span><br />
         <span className={cls.level2Heading__inner_sub}>技術</span>
       </h2>
-      <SpaceModule size="m" />
+      <div className={cls.spaceModule_m}></div>
       <h3 className={cls.level3Heading}>
         <span className={cls.level3Heading__inner}>Main</span>
       </h3>
-      <SpaceModule size="s" />
+      <div className={cls.spaceModule_s}></div>
       <div className={cls.content}>
         <div className={cls.tCenter}>
           <p>HTML5/CSS3</p>
@@ -55,11 +54,11 @@ const IndexPage = ({ data }) => (
           <p>紙とペン</p>
         </div>
       </div>
-      <SpaceModule size="m" />
+      <div className={cls.spaceModule_m}></div>
       <h3 className={cls.level3Heading}>
         <span className={cls.level3Heading__inner}>Sub</span>
       </h3>
-      <SpaceModule size="s" />
+      <div className={cls.spaceModule_s}></div>
       <div className={cls.content}>
         <div className={cls.tCenter}>
           <p>Ruby</p>
@@ -74,13 +73,13 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <SpaceModule size="l" />
+    <div className={cls.spaceModule_l}></div>
     <section className={cls.product}>
       <h2 className={cls.level2Heading}>
         <span className={cls.level2Heading__inner}>PRODUCT</span><br />
         <span className={cls.level2Heading__inner_sub}>制作</span>
       </h2>
-      <SpaceModule size="m" />
+      <div className={cls.spaceModule_m}></div>
       <div className={cls.card__wrap}>
         <a href="https://lize.dev/"
           target="_blank" rel="noopener noreferrer"
@@ -145,7 +144,7 @@ const IndexPage = ({ data }) => (
         <a href="" className={cls.btn}>More</a>
       </div>
     </section>
-    <SpaceModule size="l" />
+    <div className={cls.spaceModule_l}></div>
     <section className={cls.about}>
       <div>
         <div className={cls.about__wrap}>
@@ -182,7 +181,7 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <SpaceModule size="xl" />
+    <div className={cls.spaceModule_xl}></div>
     </Layout>
   </div>
 )
