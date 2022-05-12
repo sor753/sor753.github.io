@@ -20,5 +20,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `SK PORTFOLIO`,
+        short_name: `SK`,
+        start_url: `/`,
+        background_color: `#F4F3ED`,
+        theme_color: `#471311`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
