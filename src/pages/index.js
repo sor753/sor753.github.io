@@ -1,8 +1,11 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 import * as cls from "./common.module.scss"
 import "modern-css-reset"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <div className={cls.container}>
     <header className={cls.header}>
       <div className={cls.headerInner}>
@@ -281,9 +284,13 @@ const IndexPage = () => (
         <div className={cls.about__wrap}>
           <div className={cls.aboutImg__wrap}>
             <figure className={cls.aboutImg}>
-              <img className={cls.aboutImg__inner}
-                src="/images/stargazer.jpg"
-                alt="" />
+             <StaticImage
+                src="../images/stargazer.jpg" 
+                width={335}
+                alt="星空"
+                placeholder="blurred"
+                quality="40"
+              /> 
             </figure>
           </div>
           <div className={cls.aboutText__wrap}>
