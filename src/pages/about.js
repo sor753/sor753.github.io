@@ -10,12 +10,13 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SpaceModule from "../components/spaceModule"
 
-const AboutPage = ({ data }) => (
+const AboutPage = ({ data, location }) => (
   <div className={cls.container}>
     <Layout>
     <Seo
       pagetitle="ABOUT"
       pagedesc="ABOUTと言う名の雑記"
+      pagepath={location.pathname}
     />
     <Hero page="about" />
     <SpaceModule size="xl" />

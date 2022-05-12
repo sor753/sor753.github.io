@@ -8,11 +8,12 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SpaceModule from "../components/spaceModule"
 
-const NotFoundPage = () => (
+const NotFoundPage = ({ location }) => (
   <div className={cls.container}>
     <Layout>
     <Seo
       pagetitle="ページが見つかりません"
+      pagepath={ location.pathname }
     />
     <Hero page="notfound" /> 
     <SpaceModule size="xl" />
