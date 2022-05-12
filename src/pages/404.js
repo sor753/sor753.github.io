@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import * as cls from "./common.module.scss"
 import "modern-css-reset"
 
+import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SpaceModule from "../components/spaceModule"
@@ -10,6 +11,9 @@ import SpaceModule from "../components/spaceModule"
 const NotFoundPage = () => (
   <div className={cls.container}>
     <Layout>
+    <Seo
+      pagetitle="ページが見つかりません"
+    />
     <Hero page="notfound" /> 
     <SpaceModule size="xl" />
     <h2 className={cls.level2Heading}>

@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `portfolio`,
+    title: `SK PORTFOLIO`,
+    description: `福岡県在中のフロントエンドエンジニアです`,
+    lang: `ja`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -15,5 +17,6 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
