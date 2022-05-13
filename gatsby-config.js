@@ -3,7 +3,7 @@ module.exports = {
     title: `SK PORTFOLIO`,
     description: `福岡県在中のフロントエンドエンジニアです`,
     lang: `ja`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://sor753.github.io/`,
     locale: `ja_JP`,
     fbappid: `1634433760264119`,
   },
