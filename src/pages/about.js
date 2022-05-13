@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import * as cls from "./common.module.scss"
 import "modern-css-reset"
 
@@ -44,7 +44,7 @@ const AboutPage = ({ data, location }) => (
     </div>
     <SpaceModule size="m" />
     <div className={cls.btn__wrap}>
-      <a href="" className={cls.btn}>Home</a>
+      <Link to={`/`} className={cls.btn}>Home</Link>
     </div>
     <SpaceModule size="xl" />
     </Layout>

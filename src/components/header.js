@@ -13,6 +13,7 @@ const Header = () => (
               xmlns="http://www.w3.org/2000/svg"
               x="0px" y="0px" viewBox="0 0 269.5 24.2"
             >
+              <title>SK PORTFOLIO</title>
               <defs></defs>
               <desc>SK PORTFOLIO</desc>
               <path  fill="#471311"

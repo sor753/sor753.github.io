@@ -173,7 +173,7 @@ const IndexPage = ({ data }) => (
               と言いつつ、WebGLやWASMにも手を出したいこの頃です。
             </p>
             <div className={cls.aboutTextBtn}>
-              <Link to ={`/about/`} className={cls.btn}>More</Link>
+              <Link to ={`/about/`} className={cls.btn}>About</Link>
             </div>
           </div>
         </div>
