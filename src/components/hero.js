@@ -94,6 +94,16 @@ const Hero = (props) => {
             quality="40"
           /> 
         )
+      case 'work':
+        return(
+         <StaticImage
+            src="../images/building-blocks.jpg" 
+            width={300}
+            alt="星空"
+            placeholder="blurred"
+            quality="40"
+          /> 
+        )
       case 'notfound':
         return(
 					<svg
@@ -137,6 +147,10 @@ const Hero = (props) => {
       case 'about':
         return(
           <p className={hero.heroTtl_sub}>ABOUT</p>
+        )
+      case 'work':
+        return(
+          <p className={hero.heroTtl_sub}>WORK</p>
         )
     }
   }

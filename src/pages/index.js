@@ -10,6 +10,8 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SpaceModule from "../components/spaceModule"
 
+const tagSplit = e => e.split(',')
+
 const IndexPage = ({ data }) => (
   <div className={cls.container}>
     <Layout>
@@ -79,74 +81,46 @@ const IndexPage = ({ data }) => (
       </div>
     </section>
     <SpaceModule size="l" />
-    <section className={cls.product}>
+    <section className={cls.work}>
       <h2 className={cls.level2Heading}>
-        <span className={cls.level2Heading__inner}>PRODUCT</span><br />
+        <span className={cls.level2Heading__inner}>WORK</span><br />
         <span className={cls.level2Heading__inner_sub}>制作</span>
       </h2>
       <SpaceModule size="m" />
       <div className={cls.card__wrap}>
-        <a href="https://lize.dev/"
-          target="_blank" rel="noopener noreferrer"
-          className={`${cls.card} ${cls.card_link}`}>
-          <figure className={cls.card__imgWrap}>
-            <img
-              className={cls.card__img}
-              src="/images/card.jpg"
-              alt="Lize" />
-          </figure>
-          <div className={cls.spaceModule_xs}></div>
-          <div className={cls.card__body}>
-            <p className={cls.card__ttl}>Lize</p>
-            <p className={cls.card__text}>
-              text
-            </p>
-            <div className={cls.label__wrap}>
-              <span className={cls.label}>html/css</span>
-              <span className={cls.label}>JavaScript</span>
-              <span className={cls.label}>Vue/Nuxt.js</span>
-              <span className={cls.label}>Canvas/CreateJS</span>
+        {data.allContentfulWork.edges.map(({ node }) => (
+          <a href={node.link}
+            target="_blank" rel="noopener noreferrer"
+            className={`${cls.card} ${cls.card_link}`}
+            key={node.id}>
+            <figure className={cls.card__imgWrap}>
+              <GatsbyImage
+                image={getImage(node.thumb.gatsbyImageData)}
+                alt={node.thumb.title}
+                style={{ height: "100%", width: "100%" }}
+              />
+            </figure>
+            <div className={cls.spaceModule_xs}></div>
+            <div className={cls.card__body}>
+              <p className={cls.card__ttl}>{node.title}</p>
+              <p className={cls.card__text}>
+                {node.body.body} 
+              </p>
+              <div className={cls.spaceModule_xs}></div>
+              <p className={`${cls.card__text} ${cls.card__text_explanation}`}>
+                {node.explanation.explanation} 
+              </p>
+              <div className={cls.label__wrap}>
+                {tagSplit(node.tag).map(tag => (
+                  <span className={cls.label}>{tag}</span>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className={cls.spaceModule_xs}></div>
-        </a>
-        <a className={`${cls.card} ${cls.card_link}`}>
-          <figure className={cls.card__imgWrap}>
-            <img
-              className={cls.card__img}
-              src="/images/card.jpg"
-              alt="カード" />
-          </figure>
-          <div className={cls.spaceModule_xs}></div>
-          <div className={cls.card__body}>
-            <p className={cls.card__ttl}>Lize</p>
-            <p className={cls.card__text}>
-              text
-            </p>
-            <span className={cls.label}>html/css</span>
-          </div>
-          <div className={cls.spaceModule_xs}></div>
-        </a>
-        <a className={`${cls.card} ${cls.card_link}`}>
-          <figure className={cls.card__imgWrap}>
-            <img
-              className={cls.card__img}
-              src="/images/card.jpg"
-              alt="カード" />
-          </figure>
-          <div className={cls.spaceModule_xs}></div>
-          <div className={cls.card__body}>
-            <p className={cls.card__ttl}>Lize</p>
-            <p className={cls.card__text}>
-              text
-            </p>
-            <span className={cls.label}>html/css</span>
-          </div>
-          <div className={cls.spaceModule_xs}></div>
-        </a>
+          </a>
+        ))}
       </div>
       <div className={cls.btn__wrap}>
-        <Link to={`/`} className={cls.btn}>More</Link>
+        <Link to={`/work/`} className={cls.btn}>More Work</Link>
       </div>
     </section>
     <SpaceModule size="l" />
@@ -185,3 +159,28 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+	query {
+		allContentfulWork(limit: 3) {
+			edges {
+				node {
+          id
+					title
+          link
+          body {
+            body
+          }
+          explanation {
+            explanation
+          }  
+          thumb {
+            gatsbyImageData
+            title
+          }
+          tag
+				}
+			}
+		}
+	}  
+`

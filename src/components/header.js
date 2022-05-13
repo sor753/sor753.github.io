@@ -42,6 +42,9 @@ const Header = () => (
             <li>
               <Link to={`/about/`}>ABOUT</Link>
             </li>
+            <li>
+              <Link to={`/work/`}>WORK</Link>
+            </li>
           </ul>
         </nav>
       </div>
