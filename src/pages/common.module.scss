@@ -187,7 +187,7 @@ a {
     @media (min-width: 768px) {
       max-width: 1200px;
       margin-bottom: -30px;
-      & > *:nth-child(3) {
+      & > *:nth-child(3n) {
         margin-right: 0;
       }
     }
@@ -195,7 +195,7 @@ a {
   width: 100%;
   border: 2px solid #471311;
   margin-bottom: 20px;
-  padding: 15px 10px 5px;
+  padding: 15px 10px 15px;
   @media (min-width: 768px) {
     width: 31.707%;
     margin-right: 2.43902%;
@@ -218,8 +218,6 @@ a {
   }
   &__img-wrap {
     position: relative;
-    padding-top: 56.25%;
-    overflow: hidden;
     border: 1px solid #471311;
   }
   &__img {
@@ -232,6 +230,11 @@ a {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
+  }
+  &__text {
+    &_explanation {
+      padding-bottom: 15px;
+    }
   }
 }
 
