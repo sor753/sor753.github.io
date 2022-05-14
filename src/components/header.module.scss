@@ -2,7 +2,7 @@
 .header {
   padding:  30px 15px 50px;
   &-inner {
-    border: 0.1px solid #471311;
+    border: 1px solid #471311;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
       height: 0.1px;
       background: #471311;
       @media (min-width: 768px) {
-        width: 0.1px;
+        width: 1px;
         height: 30px;
       }
     }
