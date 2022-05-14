@@ -100,13 +100,13 @@ const IndexPage = ({ data }) => (
                 style={{ height: "100%", width: "100%" }}
               />
             </figure>
-            <div className={cls.spaceModule_xs}></div>
+            <SpaceModule size="xs" />
             <div className={cls.card__body}>
               <p className={cls.card__ttl}>{node.title}</p>
               <p className={cls.card__text}>
                 {node.body.body} 
               </p>
-              <div className={cls.spaceModule_xs}></div>
+              <SpaceModule size="xs" />
               <p className={`${cls.card__text} ${cls.card__text_explanation}`}>
                 {node.explanation.explanation} 
               </p>
